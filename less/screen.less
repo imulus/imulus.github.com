@@ -1,0 +1,130 @@
+@base 	: #FFF;
+@dark 	: #333;
+@light 	: #777;
+@accent : #239AD6;
+@text 	: #999;
+
+
+body {
+  font: 12px/18px Helvetica, Arial, sans-serif;
+  color: #999;
+	position: relative;
+  background: @base;
+}
+
+h1 {
+	font-family: 'SteelfishBold';
+	font-size: 90px;
+	text-transform: uppercase;
+	position: relative;
+	top: 30px;
+	color : @accent;
+	@shadow : @accent * 0.4;
+	text-shadow: 1px 1px 0px @shadow, 2px 2px 0px @shadow, 3px 3px 0px @shadow;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 23px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: @light;
+	@shadow : @light * 0.4;
+	text-shadow: 1px 1px 0px @shadow, 2px 2px 0px @shadow, 3px 3px 0px @shadow;
+}
+
+p {
+	color: @text;
+	margin-bottom: 12px;
+}
+
+p strong {
+	color: #FFF;
+}
+
+a {
+	color: @accent;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong { font-weight: bold; }
+
+
+/* Utilities */
+.autoclear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.autoclear		 { display: inline-block; }
+.autoclear		 { display: block; }
+
+.inner { width: 768px; margin: auto; }
+.left { width: 174px; padding-right: 18px; float: left; }
+.right { width : 558px; padding-left: 18px; float: right; }
+
+
+#header {
+	padding: 30px 18px;
+	margin: 0;
+  .inner { padding: 0 18px; }
+
+  .logo {
+    display: block;
+    margin: auto;
+    img {
+      width: 175px; height: auto;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+#container {
+	width: 804px;
+	padding: 18px 0;
+	margin: 0 auto 36px;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px dotted #CCC;
+}
+
+.section {
+	padding: 18px;
+	&.repo {
+	  text-align: center;
+    span {
+      font-weight: bold;
+    }
+	}
+}
+
+code {
+	display: block;
+	padding: 18px 36px;
+	background: @dark;
+	font-family: 'monaco', monospace;
+}
+
+code b { color: @accent; }
+code i { color: #666; font-style: italic; line-height: inherit; }
+
+.description {
+	margin: 12px 0 0;
+}
+
+#footer {
+	margin: 36px;
+}
+
+#footer a img {
+	display: block;
+	width: auto; height: auto;
+	margin: auto;
+}
+

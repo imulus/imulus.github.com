@@ -1,0 +1,132 @@
+body {
+  font: 12px/18px Helvetica, Arial, sans-serif;
+  color: #999;
+  position: relative;
+  background: #ffffff;
+}
+h1 {
+  font-family: 'SteelfishBold';
+  font-size: 90px;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+  color: #239ad6;
+  text-shadow: 1px 1px 0px #0e3e56, 2px 2px 0px #0e3e56, 3px 3px 0px #0e3e56;
+}
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #777777;
+  text-shadow: 1px 1px 0px #303030, 2px 2px 0px #303030, 3px 3px 0px #303030;
+}
+p {
+  color: #999999;
+  margin-bottom: 12px;
+}
+p strong {
+  color: #FFF;
+}
+a {
+  color: #239ad6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+/* Utilities */
+.autoclear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.autoclear {
+  display: inline-block;
+}
+.autoclear {
+  display: block;
+}
+.inner {
+  width: 768px;
+  margin: auto;
+}
+.left {
+  width: 174px;
+  padding-right: 18px;
+  float: left;
+}
+.right {
+  width: 558px;
+  padding-left: 18px;
+  float: right;
+}
+#header {
+  padding: 30px 18px;
+  margin: 0;
+}
+#header .inner {
+  padding: 0 18px;
+}
+#header .logo {
+  display: block;
+  margin: auto;
+}
+#header .logo img {
+  width: 175px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+#container {
+  width: 804px;
+  padding: 18px 0;
+  margin: 0 auto 36px;
+  border-top: 1px dotted #CCC;
+  border-bottom: 1px dotted #CCC;
+}
+.section {
+  padding: 18px;
+}
+.section.repo {
+  text-align: center;
+}
+.section.repo span {
+  font-weight: bold;
+}
+code {
+  display: block;
+  padding: 18px 36px;
+  background: #333333;
+  font-family: 'monaco', monospace;
+}
+code b {
+  color: #239ad6;
+}
+code i {
+  color: #666;
+  font-style: italic;
+  line-height: inherit;
+}
+.description {
+  margin: 12px 0 0;
+}
+#footer {
+  margin: 36px;
+}
+#footer a img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
